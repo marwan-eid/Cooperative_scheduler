@@ -49,6 +49,7 @@ This function toggles an on board LED.
 ## Parking Sensor
 This is an application that was developed on NUCLEO-L432KC MCU board to demonstrate the scheduler through calculating the distance between the sensor and the nearest object and producing peeps from a buzzer reflecting this distance.
 [App 2 Testing Video](https://drive.google.com/file/d/1HjxjuKk-F1VdVskpovXKFzAauXyghymI/view?usp=sharing)
+
 ### Functions
 - ## buzzer()
 This function checks if the measured distance is within a certain threshold. If so, it toggles the buzzer pin and dispatches itslef using ReRunMe() to run again after a certain delay relative to the distance; if not, the function stops the buzzer and reruns again after 10 ticks to repeat the process with the new distance.
@@ -57,6 +58,5 @@ This function pulls the TRIG pin of the ultrasound sensor HIGH for 10us, then it
 - ## timer()
 This function increments the time to be used for the HCSR04_read() function.
 
-https://drive.google.com/file/d/1HjxjuKk-F1VdVskpovXKFzAauXyghymI/view?usp=sharing
 ## License
 MIT
